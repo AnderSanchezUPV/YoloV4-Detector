@@ -389,6 +389,8 @@ def DataStoreTest(DSpath:str,Model_path:str,Params_path:str):
 
         img=drawBoxes(img,Bboxes,scores,labels)
 
+        #time.sleep(0.15)
+
         cv2.imshow('Test',img)
         if cv2.waitKey(1) & 0xFF == 32:
             cv2.destroyAllWindows()
@@ -401,13 +403,13 @@ def DataStoreTest(DSpath:str,Model_path:str,Params_path:str):
 
 def main(): # Proccesing image example
     # Load image
-    img=cv2.imread(r'C:\Users\dani\Documents\CoMAr\Custom Object Detector\Test images\RosBag_img_00004625.bmp')
+    #img=cv2.imread(r'C:\Users\dani\Documents\CoMAr\Custom Object Detector\Test images\RosBag_img_00004625.bmp')
   
     Model_path=r'Model\YoloV4_Aruco.onnx'
 
-    Params_path=r'C:\Users\dani\Documents\CoMAr\YoloV4 Detector\Model\YoloV4params.mat'
+    Params_path=r'Model\YoloV4params.mat'
 
-    DSpath=r'D:\CoMAr Data\BBDD\Bag Images\Slow_Ligth_Filtradas'
+    DSpath=r'C:\Users\CoMAr\Documents\CoMAr Images\BBDD 10_06_2022 Imagenes'
 
     #single_Test(img,Model_path,Params_path)
     
