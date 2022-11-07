@@ -56,7 +56,7 @@ def basler_camera_test(Model_path,Params_path):
             camera.StopGrabbing()
             cv2.destroyAllWindows()        
             break
-
+     
     return None
 
 
