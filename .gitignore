@@ -1,0 +1,7 @@
+# Ignore Folders
+__pycache__/*
+.vscode
+
+##ignore py cache extension
+*.pyc
+
